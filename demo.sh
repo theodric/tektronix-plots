@@ -15,7 +15,7 @@ wait5s
 # erase screen
     printf '\033\014'
 
-cat pltfiles/00README.txt
+cat 00README.txt
 
 wait5s
 wait5s
@@ -24,11 +24,11 @@ cat dodekagon.plt
 
 wait5s
 
-for filename in pltfiles/*.plt
+for filename in *.plt
 do
     # erase screen
     printf '\033\014'
-    echo tek4010 is displaying "$filename"
+    echo displaying "$filename"
     cat "$filename"
     wait5s
 done

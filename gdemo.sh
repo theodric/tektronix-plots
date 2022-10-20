@@ -10,7 +10,7 @@ for i in {1..30}
   done
 }
 
-for filename in pltfiles//PointPlot/*.plt
+for filename in *.plt
 do
     # erase screen
     printf '\033\014'
